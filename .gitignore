@@ -1,0 +1,6 @@
+downloads
+venv/
+parsed_xml/
+*.idea
+*.log
+*.pyc
