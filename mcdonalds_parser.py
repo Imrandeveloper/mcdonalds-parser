@@ -280,6 +280,9 @@ class McDonaldsParser:
                     index = self._get_job_id(r.url)
                     self.vacancy_dict[index]["description"] = \
                         self._get_vacancy_description(pq(r.text))
+                    if self.vacancy_dict[index]["description"] == "":
+                        error_rs.append(r.url)
+                        logging.info('Empty description in {}'.format(index))
                 except Exception as e:
                     logging.info(
                         'Error in response {}, exception:{}'.
