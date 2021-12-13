@@ -6,7 +6,7 @@ gevent==1.2.2
 greenlet==0.4.13
 grequests==0.3.0
 idna==2.6
-lxml==4.2.1
+lxml==4.6.5
 pyquery==1.4.0
 requests==2.18.4
 selenium==3.11.0
